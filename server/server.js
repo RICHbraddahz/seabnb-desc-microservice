@@ -9,7 +9,8 @@ app.use(cors());
 
 app.get('/:id', async (req, res) => {
   const { id } = req.params;
-  let html = await getRenderedComponent(id);
+  let html = await getRenderedComponent(id)
+    .catch(e => console.log(e));
   res.send(html);
 });
 
