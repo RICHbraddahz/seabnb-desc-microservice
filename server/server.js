@@ -9,8 +9,7 @@ app.use(cors());
 
 app.get('/:id', async (req, res) => {
   const { id } = req.params;
-  let html = await getRenderedComponent(id, mongoClient, redisClient);
-
+  let html = await getRenderedComponent(id);
   res.send(html);
 });
 
