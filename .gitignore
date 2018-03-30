@@ -15,4 +15,4 @@ logs
 build/
 dist/
 
-.pem
+*.pem
