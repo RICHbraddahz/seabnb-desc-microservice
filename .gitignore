@@ -13,6 +13,4 @@ logs
 .env
 
 build/
-dist/
-
 *.pem
